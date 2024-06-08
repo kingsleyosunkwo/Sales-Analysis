@@ -39,6 +39,12 @@ sales volumes and revenue.
 • Store sales and profit analysis help businesses identify areas for improvement and make datadriven decisions to optimize their operations, pricing, marketing, and inventory management
 strategies to drive revenue and growth.
 
+
+![Banner for Linkedin](https://github.com/kingsleyosunkwo/Sales-Analysis/assets/171164581/85ee46e6-a8bd-4eb6-bc9f-5c859bd8cdae)
+
+
+
+
 ### Data Sources
 
 The Primary dataset used for this analysis is the "sales_data.csv" file, containing detailed information about each sales made by the company
