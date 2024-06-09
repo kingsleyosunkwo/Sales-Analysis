@@ -16,6 +16,7 @@
 
 
 ### Project Overview
+---
 
 Sales analysis is the process of examining and evaluating sales data to gain insights into the performance of a company’s products or services. It involves analyzing various aspects of sales, such as
 trends, patterns, customer behavior, and performance metrics, to make informed business decisions.
@@ -81,3 +82,19 @@ Where
 
 ### References 
 [Stake Overflow](https://stackoverflow.com/nocaptcha?s=911714e9-88d1-4757-8a3b-a85af16c7524)
+
+🔼
+
+💻
+
+|Heading1|Heading2|Heading3|
+|--------|--------|--------|
+|Content|Content2|Content3|
+|R|SQL|Spreadsheet|
+
+
+`colomn_1`
+
+**bold**
+
+*Italic*
