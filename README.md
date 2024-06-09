@@ -1,8 +1,10 @@
-# Sales Analysis
+# SALES ANALYSIS WITH KINGSLEY OSUNKWO
 
 
-## Table of Content
+## TABLE OF CONTENT
 - [Project Overview](#project-overview)
+- [Tidyverse](#tidyverse)
+- [Objectives](#objectives)
 - [Data Sources](#data-sources)
 - [Tools](#tools)
 - [Data Cleaning and Preparation](#data-cleaning-and-preparation) 
@@ -23,6 +25,7 @@ trends, patterns, customer behavior, and performance metrics, to make informed b
 Sales analysis helps companies understand their sales performance, identify areas of strength and
 weakness, pinpoint opportunities for growth, and develop strategies to improve sales effectiveness.
 Key components of sales analysis typically include:
+
 1. Sales Volume: Examining the quantity of products or services sold over a specific period.
 2. Revenue Analysis: Assessing the revenue generated from sales, including total revenue,
 revenue by product or service, revenue by customer segment, etc.
@@ -37,21 +40,85 @@ online sales, distribution channels) and optimizing their performance.
 7. Sales Forecasting: Using historical sales data and predictive analytics to forecast future
 sales volumes and revenue.
 8. Competitive Analysis: Comparing the company’s sales performance with that of competitors to identify strengths, weaknesses, and opportunities in the market.
-• Store sales and profit analysis help businesses identify areas for improvement and make datadriven decisions to optimize their operations, pricing, marketing, and inventory management
+9. Store sales and profit analysis help businesses identify areas for improvement and make datadriven decisions to optimize their operations, pricing, marketing, and inventory management
 strategies to drive revenue and growth.
 
 
-![Banner for Linkedin](https://github.com/kingsleyosunkwo/Sales-Analysis/assets/171164581/85ee46e6-a8bd-4eb6-bc9f-5c859bd8cdae)
+### Tidyverse
 
+Hello readers! Today, I'm excited to share how the Tidyverse, a powerful collection of R packages, can be used for sales analysis. The Tidyverse is a game-changer for data manipulation and analysis, and here's how it can transform our sales data into actionable insights:
 
+1. Data Cleaning and Preprocessing: Using `dplyr` and `tidyr`, we can handle missing data, remove duplicates, and transform our data. These tools help ensure that our sales data is accurate and consistent before diving into analysis. It’s like tidying up our workspace before getting to the fun part!
+2. Data Manipulation: The Tidyverse offers robust tools for filtering, sorting, grouping, and aggregating data. With `dplyr`, we can perform calculations, compute summary statistics, and reshape data to extract meaningful insights from our sales data. Think of it as shaping raw clay into beautiful sculptures!
+3. Time Series Analysis: Time series data is no challenge with the Tidyverse and the `lubridate` package. We can easily analyze sales data over time, resample it, calculate rolling statistics, and perform date/time-based operations to understand sales trends and patterns. It’s like having a time machine for our data!
+4. Data Visualization Integration: Creating insightful visualizations is a breeze with `ggplot2`, part of the Tidyverse. This powerful package allows us to create stunning visualizations of our sales data, making complex data more accessible and understandable. It’s like turning numbers into a story!
+5. Data Merging and Joining: Combining multiple datasets is seamless with `dplyr` functions like `left_join`, `inner_join`, `right_join`, and `full_join`. This capability allows us to merge sales data with customer or product data, providing a comprehensive view and deeper insights into our sales performance. It’s like putting together pieces of a puzzle!
 
+By leveraging these tools, we can conduct a thorough and insightful sales analysis that drives business decisions and strategies. Now Let’s dive into the main event. Let's use Tidyverse and uncover the stories hidden within this our Superstore Sales data, but before we do that, let's understand the Objective behind this project.
+
+### Objectives
+- What is the overall sales trend?
+- Sales by Category?
+- Sales by Sub-Category?
+- Profit Analysis
+- Profit analysis by customer segments:
+- Which are the Top 10 products by sales?
+- Which are the Most Selling Products?
+- Which is the most preferred Ship Mode?
+- Which are the Most Profitable Category and Sub-Category?
+
+With these Objectives clearly stated, we know what sucess would look like, we also know what our key performance indicators(KPIs) would be. 
+
+### Let's get Started
+0.1 Setting up integrated development environment (IDE) for R. In this case, I would be using RStudio.
+```
+# Install Tidyverse package
+install.packages("tidyverse")
+
+# Load Tidyverse package and all Required Libraries
+library(tidyverse)
+
+# The Tidyverse package encompasses neumerous packages, for the sake of this particular line, we need `ggplot2` and `gridExtra`,
+ if you load the `tidyverse` package in R, it will automatically load ggplot2 and other related packages, making them available for use,
+but it would not automatically load `gridExtra`, so I have to load it.
+library(gridExtra)
+
+# Install and load the plotly package
+install.packages("plotly")
+library(plotly)
+layout_options(theme = "plotly_white")
+```
 
 ### Data Sources
+```
+# Install and load the readxl package
+install.packages("readxl")
+library(readxl)
+# Loading the Dataset, Read Excel file into a data frame
+df <- read_excel("/content/superstore_sales.csv")  ###Recheck this pathway t make sure it is correct####
 
-The Primary dataset used for this analysis is the "sales_data.csv" file, containing detailed information about each sales made by the company
+# Display the first few rows of the data frame
+head(df)
+###Put screenshot from R here)#####
+```
+The Primary dataset used for this analysis is the "superstore_sales.csv" file, containing detailed information about each sales made by the company
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Tools
-- Spreadsheet - Data Cleaning [Download here](https://docs.google.com/spreadsheets/d/1QpLaEFTIyp-Z1dTGKIVtpsEu_UEEYUwH1ZJI1JGwkeA/edit?usp=sharing)
+- Spreadsheet - Data Cleaning [Download here](https://drive.google.com/file/d/1n-XjMPebQ0HtojYkmf8SHRiXL-IA1MzJ/view?usp=sharing)
 - SQL Server (Data Analysis) 
 - Tableau (Creating visualisation report)
 
