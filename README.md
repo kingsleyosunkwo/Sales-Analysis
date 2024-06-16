@@ -95,12 +95,33 @@ layout_options(theme = "plotly_white")
 install.packages("readxl")
 library(readxl)
 # Loading the Dataset, Read Excel file into a data frame
-df <- read_excel("/content/superstore_sales.csv")  ###Recheck this pathway t make sure it is correct####
+sales_data <- read_excel('cloud/project/superstore_sales.xlsx')
 
-# Display the first few rows of the data frame
-head(df)
-###Put screenshot from R here)#####
+# View the first few rows of the data
+head(sales_data)
 ```
+![image](https://github.com/kingsleyosunkwo/Sales-Analysis/assets/171164581/1476954d-c8d2-4a03-b698-d3d607be7b0e)
+
+```
+# Shape of the dataset
+dim(sales_data)
+(5681, 11)
+```
+```
+# Columns present in the dataset
+colnames(sales_data)
+[1] "Item_Identifier"           "Item_Weight"               "Item_Fat_Content"         
+ [4] "Item_Visibility"           "Item_Type"                 "Item_MRP"                 
+ [7] "Outlet_Identifier"         "Outlet_Establishment_Year" "Outlet_Size"              
+[10] "Outlet_Location_Type"      "Outlet_Type"
+```
+```
+# A concise summary of the dataset
+str(sales_data)
+```
+![image](https://github.com/kingsleyosunkwo/Sales-Analysis/assets/171164581/03bffa28-bf71-4bdf-814f-442b95a58b3d)
+
+
 The Primary dataset used for this analysis is the "superstore_sales.csv" file, containing detailed information about each sales made by the company
 
 
