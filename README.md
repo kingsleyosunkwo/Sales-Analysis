@@ -121,6 +121,13 @@ str(sales_data)
 ```
 ![image](https://github.com/kingsleyosunkwo/Sales-Analysis/assets/171164581/03bffa28-bf71-4bdf-814f-442b95a58b3d)
 
+```
+# Checking missing values
+
+```
+
+
+
 
 The Primary dataset used for this analysis is the "superstore_sales.csv" file, containing detailed information about each sales made by the company
 
